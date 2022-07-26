@@ -1,0 +1,109 @@
+:host {
+    background: -webkit-linear-gradient(left, #a2c8e8, #FEF496);
+}
+
+.initial {
+    &--detail-backgroud {
+        position: fixed;
+        top: -20px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        object-fit: cover;
+        opacity: 0.3;
+    }
+}
+
+header {
+    position: absolute;
+    bottom: 0;
+
+    height: 93%;
+    transition: height 250ms cubic-bezier(1, 0, 0.58, 1);
+    width: 100%;
+    padding: -1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 20px 20px 0 0;
+    background: white;
+    color: var(--postit-font-grey);
+    z-index: 2;
+
+    align-items: center;
+
+    .read--more {
+        width: 5rem;
+        height: 2rem;
+        background: none;
+        border: none;
+        color: #4E4E4E;
+        font-weight: bold;
+
+    }
+
+    .user {
+
+        position: absolute;
+        top: -25px;
+
+        &--border {
+            padding: 0 100rem 0 100rem;
+        }
+
+        .user--avatar {
+            width: 8rem;
+            height: 8rem;
+            border: 12.5px solid #fff;
+
+        }
+
+        &--border-option {
+            position: fixed;
+            right: 0;
+            top: 18%;
+            width: 5rem;
+            margin-top: -2.5em;
+            background: none;
+            border: none;
+            color: #4E4E4E;
+        }
+
+        &--border-option-custom {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .user--info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 1;
+
+            span {
+                color: #4E4E4E;
+            }
+
+            &--name {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            &--role {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #4E4E4E;
+    }
+
+}

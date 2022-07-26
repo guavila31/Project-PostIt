@@ -1,3 +1,15 @@
+.initial {
+  &--detail-backgroud {
+    position: fixed;
+    top: -20px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+}
+
 .disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -24,6 +36,7 @@ app-half-circle-spinner {
   border-radius: 20px 20px 0 0;
   background: white;
   color: var(--postit-font-grey);
+  z-index: 2;
 
   >* {
     animation: fade 0.25s;
@@ -58,7 +71,7 @@ app-half-circle-spinner {
     font-style: italic;
     background: white;
     color: black;
-    
+
     .login--inputs--title {
       color: #707070;
       font-weight: bold;
@@ -106,6 +119,7 @@ app-half-circle-spinner {
   color: white;
   font-weight: bold;
   font-style: italic;
+  width: auto;
 
   background-color: #2D9FDB;
   border-radius: 50px;
@@ -132,6 +146,7 @@ app-half-circle-spinner {
     font-size: small;
     font-weight: bold;
     font-style: normal;
+    color: #707070;
   }
 }
 
