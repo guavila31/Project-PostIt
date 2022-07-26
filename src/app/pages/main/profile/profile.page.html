@@ -1,21 +1,20 @@
-<div class="initial">
+<div class="profile">
 
-  <div class="initial--background">
-
+  <div class="profile--background">
   </div>
   <div>
-    <img class="initial--detail-backgroud" src="assets/imgs/background.svg" alt="">
+    <img class="profile--detail-backgroud" src="assets/imgs/background.svg" alt="">
   </div>
   <header>
     <div class="user">
       <div class="user--border">
         <button class="user--border-option">
-          <img  class= "user--border-option-custom" src="assets/imgs/options-profile.svg" alt="Opcoes">
+          <img class="user--border-option-custom" src="assets/imgs/options-profile.svg" alt="Opcoes">
         </button>
         <ion-avatar class="user--avatar">
           <img src="https://i.pinimg.com/280x280_RS/a0/a0/4e/a0a04ecf77c283422a1b92cbacd58d1f.jpg" />
         </ion-avatar>
-        
+
       </div>
       <div class="user--info">
         <span class="user--info--name">
@@ -29,4 +28,12 @@
         <h3>NOTAS PÚBLICAS</h3>
       </div>
     </div>
-  </header>
+  <main>
+    <ng-container *ngFor="let post of postItArray">
+      <div class="profile-item">
+        <app-profile-item [postIt]="post"></app-profile-item>
+      </div>
+    </ng-container>
+  </main>
+</header>
+</div>
