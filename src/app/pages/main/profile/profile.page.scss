@@ -38,6 +38,10 @@
 
         align-items: center;
 
+        .my-custom-menu {
+            --width: 500px;
+          }
+          
         .read--more {
             width: 5rem;
             height: 2rem;
@@ -53,9 +57,9 @@
             position: absolute;
             top: -25px;
             
-
             &--border {
                 padding: 0 100rem 0 100rem;
+                --background: none;
             }
 
             .user--avatar {
@@ -71,14 +75,15 @@
                 top: 18%;
                 width: 5rem;
                 margin-top: -2.5em;
-                background: none;
                 border: none;
                 color: #4E4E4E;
+                --background: none;
             }
 
             &--border-option-custom {
                 width: 2rem;
                 height: 2rem;
+                background-color: none;
             }
 
             .user--info {

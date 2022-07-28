@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 import { PostItColorEnum } from 'src/app/models/enums/postit-color.enum';
 import { PostItProxy } from 'src/app/models/proxies/postit.proxy';
 
@@ -9,7 +10,12 @@ import { PostItProxy } from 'src/app/models/proxies/postit.proxy';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  constructor(private menuCtrl: MenuController) { }
+
+  toggleMenu(){
+    this.menuCtrl.toggle();
+  }
+
   public postItArray: PostItProxy[] = [
     {
       id: 0,

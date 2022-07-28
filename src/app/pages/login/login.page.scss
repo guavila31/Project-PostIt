@@ -26,7 +26,7 @@ app-half-circle-spinner {
   height: 75%;
   transition: height 250ms cubic-bezier(1, 0, 0.58, 1);
   width: 100%;
-  padding: 3rem 1rem;
+  padding: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -45,11 +45,13 @@ app-half-circle-spinner {
   header {
     width: 100%;
     transition: 500ms;
+    margin-top: 2rem;
 
     .logo {
       width: 100%;
       display: flex;
       justify-content: space-between;
+
 
       transition: width 500ms;
 
@@ -90,6 +92,7 @@ app-half-circle-spinner {
     display: flex;
     font-size: small;
     color: #707070;
+    margin-bottom: 2rem;
 
     &-register {
       color: #2D9FDB;

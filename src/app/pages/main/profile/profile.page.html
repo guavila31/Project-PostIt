@@ -1,5 +1,7 @@
 <div class="profile">
-
+  <ng-container>
+    <app-menu-lateral></app-menu-lateral>
+  </ng-container>
   <div class="profile--background">
   </div>
   <div>
@@ -8,9 +10,16 @@
   <header>
     <div class="user">
       <div class="user--border">
-        <button class="user--border-option">
-          <img class="user--border-option-custom" src="assets/imgs/options-profile.svg" alt="Opcoes">
-        </button>
+        <ion-menu-button class="user--border-option">
+          <img class="user--border-option-custom" src="assets/imgs/options-profile.svg" alt="Opcoes" menu="primary-menu">
+        </ion-menu-button> 
+ 
+        
+          <!-- <ion-menu-button color="primary" menu="primary-menu">
+          </ion-menu-button> -->
+      
+
+
         <ion-avatar class="user--avatar">
           <img src="https://i.pinimg.com/280x280_RS/a0/a0/4e/a0a04ecf77c283422a1b92cbacd58d1f.jpg" />
         </ion-avatar>
@@ -28,12 +37,12 @@
         <h3>NOTAS PÚBLICAS</h3>
       </div>
     </div>
-  <main>
-    <ng-container *ngFor="let post of postItArray">
-      <div class="profile-item">
-        <app-profile-item [postIt]="post"></app-profile-item>
-      </div>
-    </ng-container>
-  </main>
-</header>
+    <main>
+      <ng-container *ngFor="let post of postItArray">
+        <div class="profile-item">
+          <app-profile-item [postIt]="post"></app-profile-item>
+        </div>
+      </ng-container>
+    </main>
+  </header>
 </div>

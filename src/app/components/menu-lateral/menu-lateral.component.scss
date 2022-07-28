@@ -1,0 +1,40 @@
+* {
+    --background: white;
+    color: #4E4E4E;
+}
+
+ion-list {
+    background: none;
+}
+
+.header-md::after {
+    background-image: none;
+}
+
+.title {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    pointer-events: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 2.5rem;
+    position: relative;
+    top: 3rem;
+    margin-bottom: 5.3rem;
+    color: #676666;
+}
+
+.itens {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    --border-style: none;
+
+    span {
+        position: relative;
+        left: 11rem;
+    }
+}
